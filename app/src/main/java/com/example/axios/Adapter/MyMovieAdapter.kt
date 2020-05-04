@@ -13,20 +13,6 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.layout_movie_item.view.*
 
 class MyMovieAdapter(private val movieList: MutableList<Movie>): RecyclerView.Adapter<MyMovieAdapter.MyViewHolder>() {
-    class MyViewHolder (itemView:View): RecyclerView.ViewHolder(itemView){
-        var image_movie: ImageView
-        var txt_name: TextView
-        var txt_team: TextView
-        var txt_createdBy: TextView
-
-        init {
-            image_movie = itemView.image_movie
-            txt_name = itemView.txt_name
-            txt_team = itemView.txt_team
-            txt_createdBy = itemView.txt_createdBy
-        }
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         var itemView = LayoutInflater.from(parent.context).inflate(R.layout.layout_movie_item, parent, false)
         return MyViewHolder(itemView)
@@ -37,9 +23,23 @@ class MyMovieAdapter(private val movieList: MutableList<Movie>): RecyclerView.Ad
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        Picasso.get().load(movieList[position].imageUrl).into(holder.image_movie)
+        Picasso.get().load(movieList[position].imageurl).into(holder.image)
         holder.txt_name.text = movieList[position].name
         holder.txt_team.text = movieList[position].team
-        holder.txt_createdBy.text = movieList[position].createdBy
+        holder.txt_createdby.text = movieList[position].createdby
+    }
+
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var image : ImageView
+        var txt_name : TextView
+        var txt_team : TextView
+        var txt_createdby : TextView
+
+        init {
+            image = itemView.image_movie
+            txt_name = itemView.txt_name
+            txt_team = itemView.txt_team
+            txt_createdby = itemView.txt_createdby
+        }
     }
 }

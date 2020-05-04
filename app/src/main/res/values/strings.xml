@@ -5,6 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Captain America</string>
     <string name="team">Avengers</string>
-    <string name="createdBy">Joe Simon</string>
+    <string name="createdby">Joe Simon</string>
     <string name="title_activity_maps">Map</string>
 </resources>
