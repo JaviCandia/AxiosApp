@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "408848825619",
+    "firebase_url": "https://axioslogin-bca21.firebaseio.com",
+    "project_id": "axioslogin-bca21",
+    "storage_bucket": "axioslogin-bca21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408848825619:android:8e6f08c887e087e45c6ee6",
+        "android_client_info": {
+          "package_name": "com.example.axios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408848825619-n3v897tl41ibf013c3l8n41pir1ouk1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVH-hv-NlHBdFYTsPqGh6wXW_p86lArxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408848825619-n3v897tl41ibf013c3l8n41pir1ouk1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
