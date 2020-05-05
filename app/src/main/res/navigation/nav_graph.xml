@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_cardsFragment"
             app:destination="@id/cardsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardsFragment"
@@ -23,4 +26,9 @@
             app:argType="string"
             android:defaultValue="Aún no recibo nada" />
     </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.axios.ui.views.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

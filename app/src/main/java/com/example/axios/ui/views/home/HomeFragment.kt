@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.findNavController
+import com.example.axios.MapsActivity
 import com.example.axios.R
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
@@ -87,7 +88,7 @@ class HomeFragment : Fragment() {
                 }
         }
 
-        button.setOnClickListener{
+        btnNavega.setOnClickListener{
 
             // Jalo el texto
                 //val caja: EditText = view!!.findViewById(R.id.editText)
@@ -96,6 +97,10 @@ class HomeFragment : Fragment() {
             // Se lo envío en la navegación, esto viene en documentación
             val action = HomeFragmentDirections.actionHomeFragmentToCardsFragment()
             view.findNavController().navigate(action)
+        }
+
+        btnUbica.setOnClickListener{
+            view.findNavController().navigate(R.id.action_homeFragment_to_mapFragment)
         }
     }
 }
